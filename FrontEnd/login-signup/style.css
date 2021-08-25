@@ -1,0 +1,187 @@
+[class*="fontawesome-"]:before {
+  font-family: "FontAwesome", sans-serif;
+}
+
+body {
+  background: -owg-linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+  background: -webkit-gradient(linear, left top, right top, from(#272838), color-stop(#2b2d41), color-stop(#393549), to(#433545));
+  background: linear-gradient(left, #272838, #2b2d41, #393549, #433545);
+  font-family: "Raleway", sans-serif;
+}
+
+form#login-form {
+  background: #fff;
+  width: 40em;
+  margin: 2em auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.3em;
+  -webkit-box-shadow: 0 0 0.2em #000;
+  box-shadow: 0 0 0.2em #000;
+  /* &:before, &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  */
+  /* &:before {
+    content: 'or';
+    color: gray;
+    height: 0.5em;
+    width: 0.5em;
+    top: 1.75em;
+  } 
+  
+  */
+}
+
+form#login-form div.heading {
+  background: #f85f64;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5em;
+  font-size: 1.1em;
+}
+
+form#login-form div.left {
+  width: 55%;
+  float: left;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form#login-form div.right {
+  width: 45%;
+  float: right;
+  padding: 1.7em 1.5em 1em 1.5em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url(https://images.unsplash.com/photo-1532939163844-547f958e91b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTg5MTQyMA&ixlib=rb-1.2.1&q=80&w=400);
+  width: 40%;
+  height: 650px;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+form#login-form:after {
+  content: "";
+  background: rgba(128, 128, 128, 0.3);
+  height: 8em;
+  width: 0.12em;
+  top: -7em;
+  left: 0.5em;
+  z-index: 900;
+  -webkit-box-shadow: 0 9.6em 0 0 rgba(128, 128, 128, 0.3);
+  box-shadow: 0 9.6em 0 0 rgba(128, 128, 128, 0.3);
+}
+
+div.left label {
+  display: inline-block;
+  color: gray;
+  font-size: 0.6em;
+  margin-top: 0.6em;
+}
+
+div.left input[type="email"],
+div.left input[type="password"] {
+  border: 0.1em solid #dfdfdf;
+  padding: 0.25em;
+  margin: 0.6em 0em;
+  max-width: 100%;
+  border-radius: 0.4em;
+  -webkit-box-shadow: 0 0 0.2em rgba(223, 223, 223, 0.2);
+  box-shadow: 0 0 0.2em rgba(223, 223, 223, 0.2);
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+}
+
+div.left input[type="email"]:focus,
+div.left input[type="password"]:focus {
+  outline: none;
+  border: 0.1em solid #919191;
+}
+
+div.left input[type="submit"] {
+  background: #f85f64;
+  color: #fff;
+  outline: none;
+  text-transform: uppercase;
+  padding: 0.75em 0.75em 0.75em 0.75em;
+  overflow: hidden;
+  border: none;
+  letter-spacing: 0.1em;
+  margin: 0.5em 0em 5em;
+  font-weight: bold;
+  font-size: 0.6em;
+  border-radius: 0.4em;
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+}
+
+div.left input[type="submit"]:hover {
+  background: rgba(248, 95, 100, 0.8);
+}
+
+div.left div.connect {
+  color: gray;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+div.left a {
+  display: inline-block;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  width: 9em;
+  padding: 0.55em 0.3em;
+  clear: both;
+  text-align: center;
+  margin: 0.5em 0.1em;
+  border-radius: 0.3em;
+}
+
+div.left a.facebook {
+  background: #3a589a;
+  font-size: 0.7em;
+  padding: 1em 9.5em;
+  margin-top: 0.8em;
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+}
+
+div.left a.facebook:hover {
+  background: rgba(58, 88, 154, 0.8);
+}
+
+div.left a.twitter {
+  background: #4099ff;
+  font-size: 0.7em;
+  padding: 1em 9.5em;
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+}
+
+div.left a.twitter:hover {
+  background: rgba(64, 153, 255, 0.8);
+}
+
+div.left a.google-plus {
+  background: #e9544f;
+  font-size: 0.7em;
+  padding: 1em 9.5em;
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+}
+
+div.left a.google-plus:hover {
+  background: rgba(233, 84, 79, 0.8);
+}
