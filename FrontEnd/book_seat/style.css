@@ -1,0 +1,357 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   margin: 0;
+   background-color: #33065b;
+   background-image: url(images/path-bg.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+/* NAVBAR */
+
+.nav {
+   color: white;
+   font-family: "Amaranth", sans-serif;
+   font-size: 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5rem 25rem;
+   flex-wrap: wrap;
+   font-family: "Amaranth", sans-serif;
+}
+
+.nav-links ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.nav-links ul li {
+   display: inline-block;
+}
+
+.nav-links ul li:hover {
+   animation: hov 300ms ease forwards;
+}
+
+@keyframes hov {
+   from {
+      color: inherit;
+      text-shadow: none;
+   }
+
+   to {
+      color: #dc3daa;
+   }
+}
+
+.nav-links ul li a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.nav-links ul li:not(:first-child) {
+   margin-left: 5rem;
+}
+
+.profile-link p {
+   margin: 0;
+}
+
+.profile-link {
+   font-size: 1.8rem;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   cursor: pointer;
+}
+
+.profile-link:hover {
+   animation: hov 300ms ease forwards;
+}
+
+/* CONTENT */
+
+/* SECTION 1 */
+.title {
+   font-family: "Amaranth", sans-serif;
+   padding: 8px 0;
+   font-size: 2.6rem;
+   width: 90vw;
+   margin: 0 auto;
+   text-align: center;
+   color: black;
+   background-color: white;
+   border-radius: 35px;
+   margin-bottom: 30px;
+}
+
+.title p {
+   margin: 0;
+   padding: 10px;
+   font-weight: bold;
+}
+
+.selection-options{
+   display: flex;
+   margin-bottom: 30px;
+   justify-content: center;
+   align-items: center;
+   gap: 7.5vw;
+   font-family: "Open Sans", sans-serif;
+}
+
+.opt{
+  font-size: 2rem;
+  padding: 8px 0;
+  width: 25vw;
+  text-align: center;
+  background-color: white;
+  border-radius: 35px;
+}
+
+
+.bus {
+    margin: 5px auto;
+    max-width: 1000px;
+    height: 850px;
+    background-image: url(images/bg.svg);
+    background: #200041;
+  }
+
+  
+  .show {
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .show:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    width: 120%;
+    border-radius: 50%;
+  }
+  
+  .show h1 {
+    width: 80%;
+    margin: 100px auto 100px auto;
+  }
+  
+  .fuselage{
+    border-radius: 16% 16% 0% 0%;
+    padding: 120px;
+    background: #F1F2F2;
+  }
+  
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .book {
+    padding: 0% 10% 35% 35%;
+   }
+
+  .btn-book {
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #dc3daa;
+    border-radius: 20px;
+    color: white;
+    padding:2% 35% 8% 35%;
+    margin: 0 auto 50px auto; 
+    
+ }
+
+  .seats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  
+  .seat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 14;
+        -ms-flex: 14 0 14%;
+            flex: 14 0 14%;
+    padding: 10px 5px;
+    position: relative;
+  }
+  
+  .seat:nth-child(2) {
+    margin-right: 14%;
+  }
+  
+  .seat input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .seat input[type=checkbox]:checked + label {
+    background: #DC3DAA;
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    -webkit-animation-duration: 300ms;
+            animation-duration: 300ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  
+  .seat input[type=checkbox]:disabled + label {
+    background: #FFFFFF;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+  
+  .seat input[type=checkbox]:disabled + label:after {
+    content: "X";
+    text-indent: 0;
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  
+  .seat input[type=checkbox]:disabled + label:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    cursor: not-allowed;
+  }
+  
+  .seat label {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5rem;
+    padding: 4px 0;
+    background: #00D7DF;
+    border-radius: 5px;
+    -webkit-animation-duration: 300ms;
+            animation-duration: 300ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  
+  .seat label:before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 1px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+  }
+  
+  .seat label:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 0px 2px #5C6AFF;
+            box-shadow: 0 0 0px 2px #5C6AFF;
+  }
+  
+  @-webkit-keyframes rubberBand {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes rubberBand {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+  }
+  
