@@ -103,65 +103,135 @@ body {
    font-weight: bold;
 }
 
-.selection-options{
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 7.5vw;
-    font-family: "Open Sans", sans-serif;
- }
- .opt{
-    font-size: 2rem;
-    padding: 8px 0;
-    width: 25vw;
-    text-align: center;
-    background-color: white;
-    border-radius: 35px;
- }
- .sort-by p, .sort-by img{
-    display: inline-block;
- }
-.brief{
+.selection-options {
+   display: flex;
+   margin-bottom: 30px;
+   justify-content: center;
+   align-items: center;
+   gap: 7.5vw;
+   font-family: "Open Sans", sans-serif;
+}
+.opt {
+   font-size: 2rem;
+   padding: 8px 0;
+   width: 25vw;
+   text-align: center;
+   background-color: white;
+   border-radius: 35px;
+}
+.sort-by p,
+.sort-by img {
+   display: inline-block;
+}
+.brief {
    font-size: 2.2rem;
 }
 
-.btn-expl-mon {
-    color: inherit;
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 7.5vw;
-    text-decoration: none;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 2rem;
-    cursor: pointer;
-    background-color: #dc3daa;
-    border-radius: 20px;
-    color: white;
-    padding:2% 10% 4% 10%;
-    margin: 0 auto 50px auto;
- }
+/* TICKET PART */
 
- .btn-req-mon {
-     color: inherit;
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 7.5vw;
-    text-decoration: none;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 2rem;
-    cursor: pointer;
-    background-color: #00D7DF;
-    border-radius: 20px;
-    color: white;
-    padding:2% 10% 4% 10%;
-    margin: 0 auto 50px auto;
- }
+.ticket-img img {
+   width: 44vw;
+   z-index: -999;
+   position: relative;
+}
 
- 
+.ticket{
+   position: relative;
+   margin-bottom: 10px;
+}
+
+.tickets {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   margin-bottom: 30px;
+   justify-items: center;
+   padding: 0 6rem;
+}
+
+.ticket-content{
+   font-family: "Open Sans", sans-serif;
+   color: black;
+   font-size: 2.3rem;
+}
+
+.ping-img img{
+   width: 60px;
+}
+
+.ticket-content{
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 19.5%;
+   left: 10%;
+   gap: 60px;
+}
+
+.from-to-container{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.tt-price-container{
+   margin-left: 150px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.book-btn button{
+   outline: none;
+   border: none;
+   background-color: #00D7DF;
+   width: 130px;
+   height: 60px;
+   border-radius: 15px;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.time{
+   font-weight: bold;
+}
+
+.ticket-price-span{
+   color: red;
+}
+
+/* EXTRA BUTTON PART */
+
+.explore-more-btn button,
+.rtb-btn button {
+   font-family: "Open Sans", sans-serif;
+   background-color: #dc3daa;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   display: flex;
+   color: white;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+   width: 300px;
+   height: 70px;
+   border-radius: 20px;
+}
+
+.explore-more-btn img,
+.rtb-btn img {
+   width: 50%;
+}
+
+.extra-btn {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+}
+
+.rtb-btn button {
+   width: 400px;
+   background-color: white;
+   color: red;
+}
