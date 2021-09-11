@@ -1,0 +1,71 @@
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+  
+    <link rel="stylesheet" href="/static/blog/login.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<form action="#" id="login-form">
+  <div class="heading">
+
+    <nav>
+      <div class="nav">
+          <div class="nav-links">
+              <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">BOOKING</a></li>
+              <li><a href="#">FEATURES</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CONTACT</a></li>
+              </ul>
+          </div>
+          <div class="profile-link">
+            <div class="text" >SIGN IN/SIGN UP</div>
+            <div class="images"><img src="/static/blog/images/user-icon.svg" alt="" /></div>
+         </div>
+      </div>
+    </nav>
+
+  </div>
+  <div class="left">
+    <label for="email">Email</label> <br />
+    <input type="email" name="email" id="email" /> <br />
+    <label for="password">Password</label> <br />
+    <input type="password" name="password" id="pass" /> <br />
+    <input type="submit" value="login" />
+
+    <div class="connect">---- or connect with ----</div>
+    <a href="" class="facebook">
+      <!--       <span class="fontawesome-facebook"></span> -->
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+    </a> <br />
+    <a href="" class="twitter">
+      <!--       <span class="fontawesome-twitter"></span> -->
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </a> <br />
+    <a href="" class="google-plus">
+      <!--       <span class="fontawesome-google-plus"></span> -->
+      <i class="fa fa-google-plus" aria-hidden="true"></i>
+    </a>
+
+  </div>
+  <div class="right">
+
+  </div>
+</form>
+
+
+</body>
+</html>
+
+
+{% endblock content %}
