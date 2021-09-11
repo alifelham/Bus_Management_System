@@ -2,23 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Post 
 
-#dummy data used as database
-
-# posts = [
-#     {
-#         'author': 'Unnamed',
-#         'title': 'Post 1',
-#         'content': 'gvfghvfghsgvg',
-#         'date': 'feb 29nd'
-#     },
-#     {
-#         'author': 'Named',
-#         'title': 'Post 2',
-#         'content': 'gvfghvfghsgvg',
-#         'date': 'june 21st'
-#     }
-# ]
-
 
 def home(request):
     context = {
@@ -39,3 +22,17 @@ def about(request):
 
 
 
+def login(request):
+    return render(request, 'blog/login.html', {'title': 'Login'})
+
+def payment(request):
+    return render(request, 'blog/payment.html', {'title': 'Payment'})
+
+def booking(request):
+    return render(request, 'blog/booking.html', {'title': 'Booking'})
+
+def edit_booking(request):
+    return render(request, 'blog/edit_booking.html', {'title': 'Edit-Booking'})
+
+def travel_packages(request):
+    return render(request, 'blog/travel_packages.html', {'title': 'Travel-Packages'})
