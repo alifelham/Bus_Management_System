@@ -1,0 +1,213 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   margin: 0;
+   background-color: #33065b;
+   background-image: url(images/path-bg.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+/* NAVBAR */
+
+.nav {
+   color: white;
+   font-family: "Amaranth", sans-serif;
+   font-size: 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5rem 25rem;
+   flex-wrap: wrap;
+   font-family: "Amaranth", sans-serif;
+}
+
+.nav-links ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.nav-links ul li {
+   display: inline-block;
+}
+
+.nav-links ul li:hover {
+   animation: hov 300ms ease forwards;
+}
+
+@keyframes hov {
+   from {
+      color: inherit;
+      text-shadow: none;
+   }
+
+   to {
+      color: #dc3daa;
+   }
+}
+
+.nav-links ul li a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.nav-links ul li:not(:first-child) {
+   margin-left: 5rem;
+}
+
+.profile-link p {
+   margin: 0;
+}
+
+.profile-link {
+   font-size: 1.8rem;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   cursor: pointer;
+}
+
+.profile-link:hover {
+   animation: hov 300ms ease forwards;
+}
+
+/* CONTENT */
+
+/* SECTION 1 */
+.title {
+   font-family: "Amaranth", sans-serif;
+   padding: 8px 0;
+   font-size: 2.6rem;
+   width: 90vw;
+   margin: 0 auto;
+   text-align: center;
+   color: black;
+   background-color: white;
+   border-radius: 35px;
+   margin-bottom: 30px;
+}
+
+.title p {
+   margin: 0;
+   padding: 10px;
+   font-weight: bold;
+}
+
+.selection-options{
+   display: flex;
+   margin-bottom: 30px;
+   justify-content: center;
+   align-items: center;
+   gap: 7.5vw;
+   font-family: "Open Sans", sans-serif;
+}
+
+.opt{
+   font-size: 2rem;
+   padding: 8px 0;
+   width: 25vw;
+   text-align: center;
+   background-color: white;
+   border-radius: 35px;
+}
+
+.sort-by p, .sort-by img{
+   display: inline-block;
+}
+
+.card {
+   width: 90vw;
+   background-color: white;
+   margin: 0 auto;
+   border-radius: 35px;
+   /* border-radius: 20px; */
+   font-size: 2.4rem;
+   font-family: "Open Sans", sans-serif;
+   height: 35vh;
+   display: flex;
+   align-items: center;
+   margin-bottom: 30px;
+   justify-content: flex-start;
+   position: relative;
+}
+
+.card img{
+   height: inherit;
+   border-radius: 35px 0 0 35px;
+}
+
+.card .card-writings{
+   margin:0 0 0 5rem;
+   width: 55%;
+}
+
+.card-title{
+   font-weight: bold;
+}
+
+.card-price{
+   opacity: 70%;
+}
+
+.brief{
+   font-size: 2.2rem;
+}
+
+/* .learn-more-btn a{
+   color: inherit;
+   text-decoration: none;
+   cursor: pointer;
+   background-color: #dc3daa;
+   border-radius: 20px;
+   color: white;
+   padding: 1.5rem 3rem;
+} */
+
+.book-now-btn a{
+   color: inherit;
+   text-decoration: none;
+   cursor: pointer;
+   background-color: #dc3daa;
+   border-radius: 20px;
+   color: white;
+   padding: 1.5rem 3.75rem;
+}
+
+
+.buttons{
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   position: absolute;
+   right: 40px;
+   top: 50px;
+}
+
+.see-more-btn{
+   margin: 0 auto 50px auto;
+   color: inherit;
+   font-family: "Open Sans", sans-serif;
+   text-decoration: none;
+   cursor: pointer;
+   background-color: white;
+   /* border: 2px solid white; */
+   border-radius: 20px;
+   color: black;
+   padding: 0 3.75rem;
+   width: 11vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+   gap: 4px;
+}
