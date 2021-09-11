@@ -1,4 +1,4 @@
-<<!-- {% extends "blog/base.html" %}
+<!-- {% extends "blog/base.html" %}
 
     {% for post in posts %}
     <article class="media content-section">
@@ -13,7 +13,7 @@
       </article>
     {% endfor %}
 
-    -->>
+    -->
 
     {% block content %}
     <!DOCTYPE html>
@@ -56,21 +56,22 @@
                </div>
             </div>
          </nav>
-         <form action="" method="post">
+         <form method="post">
+            {% csrf_token %}
             <div class="search-option">
                <div class="intro">Where do you want to go?</div>
 
                <div class="from search-b">
-                  <input type="text" placeholder="FROM" required />
+                  <input type="text" name="from_value" placeholder="FROM" required />
                   <img src="static/blog/images/distanceIconSilver.svg" alt="" />
                </div>
                <div class="switch-icon"><img src="static/blog/images/SwitchIcon.svg" alt="" /></div>
                <div class="to search-b">
-                  <input type="text" placeholder="TO" required />
+                  <input type="text" name="to_value" placeholder="TO" required />
                   <img src="static/blog/images/distanceIconSilver.svg" alt="" />
                </div>
                <div class="date search-b">
-                  <input type="text" placeholder="DATE" required />
+                  <input type="text" name="date_value" placeholder="DATE" required />
                   <img src="static/blog/images/calender.svg" alt="" />
                </div>
                <div class="search">

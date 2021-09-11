@@ -1,0 +1,303 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="static/blog/search_bus.css" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+         rel="stylesheet"
+      />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+         rel="stylesheet"
+      />
+
+      <title>Search Bus</title>
+   </head>
+   <body>
+      <div class="body">
+         <nav>
+            <div class="nav">
+               <div class="nav-links">
+                  <ul>
+                     <li><a href="{% url 'blog-home' %}">HOME</a></li>
+                     <li><a href="#">BOOKING</a></li>
+                     <li><a href="#">FEATURES</a></li>
+                     <li><a href="{% url 'blog-about' %}">ABOUT</a></li>
+                     <li><a href="#">CONTACT</a></li>
+                  </ul>
+               </div>
+               <div class="profile-link">
+                  <div class="text">SIGN IN/SIGN UP</div>
+                  <div class="images"><img src="static/blog/search_bus_images/user-icon.svg" alt="" /></div>
+               </div>
+            </div>
+         </nav>
+         <div class="title"><p>Search Bus</p></div>
+         <div class="selection-options">
+            <div class="starting-loc opt">
+               <p>
+                  Starting Location : <span class="starting-loc-name"><strong>{{from}}</strong></span>
+               </p>
+            </div>
+            <div class="destination-loc opt">
+               <p>
+                  Destination Location : <span class="destination-loc-name"><strong>{{to}}</strong></span>
+               </p>
+            </div>
+            <div class="sort-by opt">
+               <p>Sort By</p>
+               <img src="static/blog/search_bus_images/dropdown.svg" alt="" />
+            </div>
+         </div>
+
+         <div class="tickets">
+            <div class="ticket">
+               <div class="ticket-img"><img src="static/blog/search_bus_images/Vector.svg" alt="" /></div>
+               <div class="ticket-content">
+                  <div class="ping-img"><img src="static/blog/search_bus_images/pinglogo.svg" alt="" /></div>
+                  <div class="from-to-container">
+                     <div class="from">
+                        <div class="from-loc"><strong>DHAKA</strong></div>
+                        <div class="from-time">25 AUGUST, 2021</div>
+                     </div>
+                     <div class="to">
+                        <div class="to-loc"><strong>RAJSHAHI</strong></div>
+                        <div class="to-time">26 AUGUST, 2021</div>
+                     </div>
+                  </div>
+                  <div class="tt-price-container">
+                     <div class="time">3:30 PM</div>
+                     <div class="book-btn"><button>BOOK TICKETS</button></div>
+                     <div class="price">Price : <span class="ticket-price-span">1000 TK</span></div>
+                  </div>
+               </div>
+            </div>
+
+
+
+				<div class="ticket">
+               <div class="ticket-img"><img src="static/blog/search_bus_images/Vector.svg" alt="" /></div>
+               <div class="ticket-content">
+                  <div class="ping-img"><img src="static/blog/search_bus_images/pinglogo.svg" alt="" /></div>
+                  <div class="from-to-container">
+                     <div class="from">
+                        <div class="from-loc"><strong>DHAKA</strong></div>
+                        <div class="from-time">25 AUGUST, 2021</div>
+                     </div>
+                     <div class="to">
+                        <div class="to-loc"><strong>RAJSHAHI</strong></div>
+                        <div class="to-time">26 AUGUST, 2021</div>
+                     </div>
+                  </div>
+                  <div class="tt-price-container">
+                     <div class="time">3:30 PM</div>
+                     <div class="book-btn"><button>BOOK TICKETS</button></div>
+                     <div class="price">Price : <span class="ticket-price-span">1000 TK</span></div>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+				<div class="ticket">
+               <div class="ticket-img"><img src="static/blog/search_bus_images/Vector.svg" alt="" /></div>
+               <div class="ticket-content">
+                  <div class="ping-img"><img src="static/blog/search_bus_images/pinglogo.svg" alt="" /></div>
+                  <div class="from-to-container">
+                     <div class="from">
+                        <div class="from-loc"><strong>DHAKA</strong></div>
+                        <div class="from-time">25 AUGUST, 2021</div>
+                     </div>
+                     <div class="to">
+                        <div class="to-loc"><strong>RAJSHAHI</strong></div>
+                        <div class="to-time">26 AUGUST, 2021</div>
+                     </div>
+                  </div>
+                  <div class="tt-price-container">
+                     <div class="time">3:30 PM</div>
+                     <div class="book-btn"><button>BOOK TICKETS</button></div>
+                     <div class="price">Price : <span class="ticket-price-span">1000 TK</span></div>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+				<div class="ticket">
+               <div class="ticket-img"><img src="static/blog/search_bus_images/Vector.svg" alt="" /></div>
+               <div class="ticket-content">
+                  <div class="ping-img"><img src="static/blog/search_bus_images/pinglogo.svg" alt="" /></div>
+                  <div class="from-to-container">
+                     <div class="from">
+                        <div class="from-loc"><strong>DHAKA</strong></div>
+                        <div class="from-time">25 AUGUST, 2021</div>
+                     </div>
+                     <div class="to">
+                        <div class="to-loc"><strong>RAJSHAHI</strong></div>
+                        <div class="to-time">26 AUGUST, 2021</div>
+                     </div>
+                  </div>
+                  <div class="tt-price-container">
+                     <div class="time">3:30 PM</div>
+                     <div class="book-btn"><button>BOOK TICKETS</button></div>
+                     <div class="price">Price : <span class="ticket-price-span">1000 TK</span></div>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+				<div class="ticket">
+               <div class="ticket-img"><img src="static/blog/search_bus_images/Vector.svg" alt="" /></div>
+               <div class="ticket-content">
+                  <div class="ping-img"><img src="static/blog/search_bus_images/pinglogo.svg" alt="" /></div>
+                  <div class="from-to-container">
+                     <div class="from">
+                        <div class="from-loc"><strong>DHAKA</strong></div>
+                        <div class="from-time">25 AUGUST, 2021</div>
+                     </div>
+                     <div class="to">
+                        <div class="to-loc"><strong>RAJSHAHI</strong></div>
+                        <div class="to-time">26 AUGUST, 2021</div>
+                     </div>
+                  </div>
+                  <div class="tt-price-container">
+                     <div class="time">3:30 PM</div>
+                     <div class="book-btn"><button>BOOK TICKETS</button></div>
+                     <div class="price">Price : <span class="ticket-price-span">1000 TK</span></div>
+                  </div>
+               </div>
+            </div>
+
+
+
+				<div class="ticket">
+               <div class="ticket-img"><img src="static/blog/search_bus_images/Vector.svg" alt="" /></div>
+               <div class="ticket-content">
+                  <div class="ping-img"><img src="static/blog/search_bus_images/pinglogo.svg" alt="" /></div>
+                  <div class="from-to-container">
+                     <div class="from">
+                        <div class="from-loc"><strong>DHAKA</strong></div>
+                        <div class="from-time">25 AUGUST, 2021</div>
+                     </div>
+                     <div class="to">
+                        <div class="to-loc"><strong>RAJSHAHI</strong></div>
+                        <div class="to-time">26 AUGUST, 2021</div>
+                     </div>
+                  </div>
+                  <div class="tt-price-container">
+                     <div class="time">3:30 PM</div>
+                     <div class="book-btn"><button>BOOK TICKETS</button></div>
+                     <div class="price">Price : <span class="ticket-price-span">1000 TK</span></div>
+                  </div>
+               </div>
+            </div>
+
+
+
+				<div class="ticket">
+               <div class="ticket-img"><img src="static/blog/search_bus_images/Vector.svg" alt="" /></div>
+               <div class="ticket-content">
+                  <div class="ping-img"><img src="static/blog/search_bus_images/pinglogo.svg" alt="" /></div>
+                  <div class="from-to-container">
+                     <div class="from">
+                        <div class="from-loc"><strong>DHAKA</strong></div>
+                        <div class="from-time">25 AUGUST, 2021</div>
+                     </div>
+                     <div class="to">
+                        <div class="to-loc"><strong>RAJSHAHI</strong></div>
+                        <div class="to-time">26 AUGUST, 2021</div>
+                     </div>
+                  </div>
+                  <div class="tt-price-container">
+                     <div class="time">3:30 PM</div>
+                     <div class="book-btn"><button>BOOK TICKETS</button></div>
+                     <div class="price">Price : <span class="ticket-price-span">1000 TK</span></div>
+                  </div>
+               </div>
+            </div>
+
+
+
+				<div class="ticket">
+               <div class="ticket-img"><img src="static/blog/search_bus_images/Vector.svg" alt="" /></div>
+               <div class="ticket-content">
+                  <div class="ping-img"><img src="static/blog/search_bus_images/pinglogo.svg" alt="" /></div>
+                  <div class="from-to-container">
+                     <div class="from">
+                        <div class="from-loc"><strong>DHAKA</strong></div>
+                        <div class="from-time">25 AUGUST, 2021</div>
+                     </div>
+                     <div class="to">
+                        <div class="to-loc"><strong>RAJSHAHI</strong></div>
+                        <div class="to-time">26 AUGUST, 2021</div>
+                     </div>
+                  </div>
+                  <div class="tt-price-container">
+                     <div class="time">3:30 PM</div>
+                     <div class="book-btn"><button>BOOK TICKETS</button></div>
+                     <div class="price">Price : <span class="ticket-price-span">1000 TK</span></div>
+                  </div>
+               </div>
+            </div>
+
+
+
+				<div class="ticket">
+               <div class="ticket-img"><img src="static/blog/search_bus_images/Vector.svg" alt="" /></div>
+               <div class="ticket-content">
+                  <div class="ping-img"><img src="static/blog/search_bus_images/pinglogo.svg" alt="" /></div>
+                  <div class="from-to-container">
+                     <div class="from">
+                        <div class="from-loc"><strong>DHAKA</strong></div>
+                        <div class="from-time">25 AUGUST, 2021</div>
+                     </div>
+                     <div class="to">
+                        <div class="to-loc"><strong>RAJSHAHI</strong></div>
+                        <div class="to-time">26 AUGUST, 2021</div>
+                     </div>
+                  </div>
+                  <div class="tt-price-container">
+                     <div class="time">3:30 PM</div>
+                     <div class="book-btn"><button>BOOK TICKETS</button></div>
+                     <div class="price">Price : <span class="ticket-price-span">1000 TK</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="extra-btn">
+            <div class="explore-more-btn">
+               <button>
+                  <div class="btn-stl">EXPLORE MORE</div>
+                  <div class="btn-stl-img"><img src="static/blog/search_bus_images/compass-circular-tool.svg" alt="" /></div>
+               </button>
+            </div>
+            <div class="rtb-btn">
+               <button>
+                  <div class="btn-stl-img"><img src="static/blog/search_bus_images/danger.svg" alt="" /></div>
+                  <div class="btn-stl">Requirements to board</div>
+               </button>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+{% endblock content %}
