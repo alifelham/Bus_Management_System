@@ -1,0 +1,71 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="static/blog/aboutUs.css" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+         rel="stylesheet"
+      />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+         rel="stylesheet"
+      />
+
+      <title>About Us</title>
+   </head>
+   <body>
+      <div class="body">
+         <nav>
+            <div class="nav">
+               <div class="nav-links">
+                  <ul>
+                     <li><a href="{% url 'blog-home' %}">HOME</a></li>
+                     <li><a href="#">BOOKING</a></li>
+                     <li><a href="#">FEATURES</a></li>
+                     <li><a href="{% url 'blog-about' %}">ABOUT</a></li>
+                     <li><a href="#">CONTACT</a></li>
+                  </ul>
+               </div>
+               <div class="profile-link">
+                  <div class="text">SIGN IN/SIGN UP</div>
+                  <div class="images"><img src="static/blog/aboutus_images/user-icon.svg" alt="" /></div>
+               </div>
+            </div>
+         </nav>
+
+         <section class="section1 section">
+            <div class="sec-title"><p>About Us</p></div>
+            <div class="section-content">
+               <div class="section-content2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cum architecto amet labore praesentium esse! Quae adipisci quisquam illo ut, doloremque accusamus quibusdam, esse eligendi neque ducimus saepe. Provident at autem perferendis nostrum odit illum magnam? Autem quisquam asperiores officia corporis deserunt in magnam ipsa nihil, veritatis vitae laborum accusamus eum natus, minima totam inventore quam eligendi optio dolores, tempore delectus quidem. Eum dignissimos facilis reiciendis, magnam odio expedita dolores dolore accusamus reprehenderit ratione maiores et illo, ipsa vitae id.</p>                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="section2 section">
+            <div class="sec-title"><p>Our Mission</p></div>
+            <div class="section-content">
+               <div class="section-content2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corporis, nihil a sit quod possimus odio accusantium dignissimos quia, blanditiis voluptatibus velit adipisci. Eaque, tenetur! Quisquam nesciunt sit dolorum eligendi earum saepe porro eius! Quaerat est necessitatibus sint, iste obcaecati temporibus nihil deleniti quas sed sequi nobis! Assumenda, ratione adipisci!</p>
+               </div>
+               
+            </div>
+         </section>
+      </div>
+   </body>
+</html>
+{% endblock content %}
