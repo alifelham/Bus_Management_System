@@ -1,0 +1,237 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   margin: 0;
+   background-color: #33065b;
+   background-image: url(static/blog/search_bus_images/path-bg.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+/* NAVBAR */
+
+.nav {
+   color: white;
+   font-family: "Amaranth", sans-serif;
+   font-size: 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5rem 25rem;
+   flex-wrap: wrap;
+   font-family: "Amaranth", sans-serif;
+}
+
+.nav-links ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.nav-links ul li {
+   display: inline-block;
+}
+
+.nav-links ul li:hover {
+   animation: hov 300ms ease forwards;
+}
+
+@keyframes hov {
+   from {
+      color: inherit;
+      text-shadow: none;
+   }
+
+   to {
+      color: #dc3daa;
+   }
+}
+
+.nav-links ul li a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.nav-links ul li:not(:first-child) {
+   margin-left: 5rem;
+}
+
+.profile-link p {
+   margin: 0;
+}
+
+.profile-link {
+   font-size: 1.8rem;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   cursor: pointer;
+}
+
+.profile-link:hover {
+   animation: hov 300ms ease forwards;
+}
+
+/* CONTENT */
+
+/* SECTION 1 */
+.title {
+   font-family: "Amaranth", sans-serif;
+   padding: 8px 0;
+   font-size: 2.6rem;
+   width: 90vw;
+   margin: 0 auto;
+   text-align: center;
+   color: black;
+   background-color: white;
+   border-radius: 35px;
+   margin-bottom: 30px;
+}
+
+.title p {
+   margin: 0;
+   padding: 10px;
+   font-weight: bold;
+}
+
+.selection-options {
+   display: flex;
+   margin-bottom: 30px;
+   justify-content: center;
+   align-items: center;
+   gap: 7.5vw;
+   font-family: "Open Sans", sans-serif;
+}
+.opt {
+   font-size: 2rem;
+   padding: 8px 0;
+   width: 25vw;
+   text-align: center;
+   background-color: white;
+   border-radius: 35px;
+}
+.sort-by p,
+.sort-by img {
+   display: inline-block;
+}
+.brief {
+   font-size: 2.2rem;
+}
+
+/* TICKET PART */
+
+.ticket-img img {
+   width: 44vw;
+   z-index: -999;
+   position: relative;
+}
+
+.ticket{
+   position: relative;
+   margin-bottom: 10px;
+}
+
+.tickets {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   margin-bottom: 30px;
+   justify-items: center;
+   padding: 0 6rem;
+}
+
+.ticket-content{
+   font-family: "Open Sans", sans-serif;
+   color: black;
+   font-size: 2.3rem;
+}
+
+.ping-img img{
+   width: 60px;
+}
+
+.ticket-content{
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 19.5%;
+   left: 10%;
+   gap: 60px;
+}
+
+.from-to-container{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.tt-price-container{
+   margin-left: 150px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.book-btn button{
+   outline: none;
+   border: none;
+   background-color: #00D7DF;
+   width: 130px;
+   height: 60px;
+   border-radius: 15px;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.time{
+   font-weight: bold;
+}
+
+.ticket-price-span{
+   color: red;
+}
+
+/* EXTRA BUTTON PART */
+
+.explore-more-btn button,
+.rtb-btn button {
+   font-family: "Open Sans", sans-serif;
+   background-color: #dc3daa;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   display: flex;
+   color: white;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+   width: 300px;
+   height: 70px;
+   border-radius: 20px;
+}
+
+.explore-more-btn img,
+.rtb-btn img {
+   width: 50%;
+}
+
+.extra-btn {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+}
+
+.rtb-btn button {
+   width: 400px;
+   background-color: white;
+   color: red;
+}

@@ -12,13 +12,25 @@ def home(request):
         #gets all posts from the Post class
         #'posts' : Post.objects.all()
     }
-    return render(request, 'blog/home.html', context)
+    if request.method == 'GET':
+        return render(request, 'blog/home.html', context)
+    elif request.method == 'POST':
+        fromV = request.POST.get("from_value")
+        toV = request.POST.get("to_value")
+        dateV = request.POST.get("date_value")
+        return render(request, 'blog/search_bus.html', {'from': fromV, 'to': toV})
 
 #def about(request):
 #   return HttpResponse('<h1>Blog about</h1>')
 
 def about(request):
-    return render(request, 'blog/about.html', {'title': 'About'})
+        return render(request, 'blog/about.html', {'title': 'About'})
+
+    
+    
+
+# def post(self, request):
+
 
 
 
