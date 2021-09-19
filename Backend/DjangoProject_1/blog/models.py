@@ -18,3 +18,9 @@ class Post(models.Model):
     #defining what the py shell shows when requested to see the posts 
     def __str__(self):
         return self.title
+
+# class RegisteredForms(models.Model):
+#     full_name = models.CharField(max_length=200)
+#     password = models.CharField(max_length=200)
+#     phone_no = models.CharField(max_length=200)
+#     email = models.EmailField(max_length=200)
